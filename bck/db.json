@@ -1,0 +1,36 @@
+{
+  "products": [
+    {
+      "id": 123,
+      "name": "Filipe",
+      "price": 1000,
+      "nome": "Mel de abelha",
+      "preco": "200.65"
+    },
+    {
+      "nome": "Banana da terra",
+      "preco": "29.00",
+      "id": 124
+    },
+    {
+      "nome": "Ovo de Páscoa",
+      "preco": "1000.00",
+      "id": 125
+    },
+    {
+      "nome": "Computador GAMER",
+      "preco": "15957654",
+      "id": 126
+    },
+    {
+      "nome": "água",
+      "preco": "2500",
+      "id": 127
+    },
+    {
+      "nome": "Guaraná",
+      "preco": "8.69",
+      "id": 128
+    }
+  ]
+}

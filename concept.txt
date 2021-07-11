@@ -1,0 +1,58 @@
+Atribute Directives -> Altera a aparência e o comportamento de um elemento ou outra diretiva.
+Altera tanto o estilo como o comportamento.
+________________________________________________________________________________________
+@decoretor é um padrão de projeto, evita heração e trabalha com composição.
+_______________________________________________________________________________________
+Strucutal Directives -> Altera o layout adicionando e removendo elementos da DOM
+*ngIf -> estrutural *
+*ngFor
+________________________________________________________________________________________
+Propety binding -> bind de atributo [example] ---> colcehtes [] <--- sintaxe para "chamar"
+Ligação.
+_________________________________________________________________________________________
+Event Binding ligação de evento / ---> ação Parenteses ()<---
+_________________________________________________________________________________________
+One Way Data Binding -> Unidirecional. Do componente para o html, unidrecional. Sentindo único
+do TypeScript para o html, neste caso utilizamos o binding de atributo [value]
+_________________________________________________________________________________________
+Two Way Data Binding -> binding de duas direções --->[()] <---se for alterar no ts ou no html vai ser atulizando em ambos.
+O sentindo é de duas direções.Ex Utilizando em forms
+_________________________________________________________________________________________
+Pipes -> processamentos em cima de variaveis. 
+Formatações de moeda, data
+{{ produto.vencimento | date }}
+Alguns pipes recebem parametros.
+<td mat-cell *matCellDef="let produto">
+{{ product.price | currency: 'BRL'}}
+</td>
+Pode ser utilizado também uma cadeia de pipes. Change ou encadeamento.
+_____________________________________________________________________________________________________
+Programação reativa ReactiveX "rxjs";
+    O padrão Observer...
+    Padrão orientado a evento.
+    CAda obsever tem que se registrar no subject para receber notificações de um determinado evento.
+    O subject detecta o evento e notifica todos os observer
+
+    *Observables
+        Callbacks - Passa-se uma função como parametro para outra função.
+        "Eu quero que você passe essa função como parametro, quando a resposta chegar me avise".
+
+        Promisses- Capacidade de encadear várias chamadas. Várias funções chamadas de forma simples.
+        Observables -> Reusável, stream dados, operadores
+_____________________________________________________________________________________________________
+Services
+São classes que tem como objetivo organizar e compartilhar métodos e dados entre compomentes.
+Mas é possível utilizar em diretivas, o ponto focal é separar as responsabilidades.
+Motivação para o service -> Concetração e coerência n lógica.
+_____________________________________________________________________________________________________
+Injeção de depÊndencias 
+@injectable
+ProductService -> no caso essa classe pode ser "injetada" e ao mesmo tempo
+estamos dizendo ao angular que ele deve considerar e instanciar essa classe 
+para mim. O próprio angular intacia e cria.
+
+PRovindeIN - apelido ao appModule, ele é um injetor.
+Services são sngletons dentro do escopo de um injector.
+Existem dois grupos de injores, os de modulo e os de elementos.
+@NgModule-Injectable utilização do injector de modulo.
+@directive ou @compoments injetor de elementos
